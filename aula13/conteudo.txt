@@ -1,0 +1,36 @@
+Operadores de comparação:
+    = associando um valor a espaço de armazenamento (variavel ou constante)
+    == comparação de igualdade
+    != comparação de diferença
+
+    > maior que (7 > 3)
+    < menor que (4 < 8)
+    >= maior igual (18 >= 18)
+    <= menor igual (13 <= 15)
+
+Operadores de conjunção:
+    && e (condição e condição)
+    || ou (condição ou condição)
+
+Estruturas de Controle:
+    - Estrutura Sequencial
+    - Estrutura de Decisão
+        - Simples (ou vai por um caminho ou nao vai)
+        - Composta (ou vai por um caminho, ou vai por outro)
+        - Encadeada (uma decisão depende do resultado da outra)
+        - Composta 
+    - Estrutura de Repetição
+        - Com validação no incio (WHILE)
+        - Com validação no final (DO WHILE)
+        - Com variavel de controle (FOR)
+
+Estruturas de Dados:
+    - Variável
+    - Constante
+
+    Tipos de dados:
+        - Tipos Primitivos:
+            - string
+            - int
+            - float
+            - boolean
