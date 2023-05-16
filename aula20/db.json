@@ -1,0 +1,26 @@
+{
+  "bebidas": [
+    {
+      "id": 1,
+      "nome": "Ypioca - paixao brasileira",
+      "quantidade": 24
+    },
+    {
+      "nome": "Campestre da Serra",
+      "id": 3
+    },
+    {
+      "nome": "Vinho Dom Bento",
+      "quantidade": 12,
+      "id": 4
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "Vitor da Silva",
+      "email": "vitor@email.com",
+      "telefone": "8712361231",
+      "id": 1
+    }
+  ]
+}

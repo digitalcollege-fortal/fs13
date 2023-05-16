@@ -1,0 +1,9 @@
+<Compra>
+    <Valor>149.89</Valor>
+    <DataHora>2023-04-04 21:20:45</DataHora>
+    
+    <Cartao>
+        <Numero>1234 1234 1234 1234</Numero>
+        <Senha>1234</Senha>
+    </Cartao>
+</Compra>

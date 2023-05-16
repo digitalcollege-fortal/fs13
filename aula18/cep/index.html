@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+    <body class="container" style="background-color: #DEDEDE;">
+        <h1 class="mt-4">Buscar Endereço pelo CEP</h1>
+        <hr>
+        
+        <section class="card card-body">
+            <form action="">
+                <label for="cep">CEP</label>
+                <input id="cep" onblur="buscar()" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <label for="logradouro">Logradouro</label>
+                <input id="logradouro" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <label for="numero">Número</label>
+                <input id="numero" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <label for="bairro">Bairro</label>
+                <input id="bairro" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <label for="cidade">Cidade</label>
+                <input id="cidade" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <label for="uf">UF</label>
+                <input id="uf" class="form-control mb-3" type="text" placeholder="Digite aqui">
+
+                <button class="btn btn-primary w-100">ENVIAR</button>
+            </form>
+        </section>
+
+        <script src="buscar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "bebidas": [
+    {
+      "id": 1,
+      "nome": "Heineken"
+    },
+    {
+      "id": 2,
+      "nome": "Heineken 2 "
+    },
+    {
+      "id": 6,
+      "nome": "Heineken 6"
+    },
+    {
+      "nome": "Ypioca",
+      "descricao": "Ouro 960ml",
+      "quantidade": "10",
+      "foto": "https://www.emporiofreicaneca.com.br/wp-content/uploads/2020/09/Cachaca-Ypioca-Ouro-Sem-Palha-965ml.png",
+      "id": 7
+    },
+    {
+      "nome": "Ypioca",
+      "descricao": "Prata 960ml",
+      "quantidade": "12",
+      "foto": "https://www.emporiofreicaneca.com.br/wp-content/uploads/2020/09/Cachaca-Ypioca-Ouro-Sem-Palha-965ml.png",
+      "id": 8
+    },
+    {
+      "nome": "Ypioca",
+      "descricao": "Paixao brasileira",
+      "quantidade": "10",
+      "foto": "https://www.emporiofreicaneca.com.br/wp-content/uploads/2020/09/Cachaca-Ypioca-Ouro-Sem-Palha-965ml.png",
+      "id": 9
+    },
+    {
+      "nome": "",
+      "descricao": "",
+      "quantidade": "",
+      "foto": "",
+      "id": 10
+    },
+    {
+      "nome": "Outra bebida",
+      "descricao": "beidinha",
+      "quantidade": "123",
+      "foto": "https://www.emporiofreicaneca.com.br/wp-content/uploads/2020/09/Cachaca-Ypioca-Ouro-Sem-Palha-965ml.png",
+      "id": 11
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "Vitor da Silva",
+      "email": "vitor@email.com",
+      "telefone": "8712361231",
+      "id": 1
+    }
+  ]
+}

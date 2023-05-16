@@ -1,0 +1,18 @@
+{
+  "carros": [
+    {
+      "id": 1,
+      "marca": "Chevrolet",
+      "modelo": "Celta",
+      "placa": "PNO-6645",
+      "foto": "https://www.autoo.com.br/fotos/2016/1/1280_960/chevrolet_Celta_2015_1_1312016_414_1280_960.jpg"
+    },
+    {
+      "marca": "Chevrolet",
+      "modelo": "Classic",
+      "placa": "RNO-1234",
+      "foto": "https://www.autossegredos.com.br/wp-content/webp-express/webp-images/uploads/2014/03/chevrolet_classic_advantage.jpg.webp",
+      "id": 2
+    }
+  ]
+}

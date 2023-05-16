@@ -1,0 +1,40 @@
+{
+  "bebidas": [
+    {
+      "nome": "Fanta Laranja",
+      "descricao": "bla bla",
+      "quantidade": "10",
+      "foto": "",
+      "id": 13
+    },
+    {
+      "nome": "Fanta Uva",
+      "descricao": "",
+      "quantidade": "",
+      "foto": "",
+      "id": 17
+    },
+    {
+      "nome": "teste",
+      "descricao": "",
+      "quantidade": "",
+      "foto": "",
+      "id": 18
+    },
+    {
+      "nome": "Outra bebida 2",
+      "descricao": "beidinha",
+      "quantidade": "123",
+      "foto": "https://www.emporiofreicaneca.com.br/wp-content/uploads/2020/09/Cachaca-Ypioca-Ouro-Sem-Palha-965ml.png",
+      "id": 19
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "Vitor da Silva",
+      "email": "vitor@email.com",
+      "telefone": "8712361231",
+      "id": 1
+    }
+  ]
+}
