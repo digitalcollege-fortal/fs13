@@ -20,9 +20,18 @@
 
 - Instalar as dependencias de desenvolvimento
     - `npm install json-server --save-dev`
+    - `npm install http-server --save-dev`
 
 - Add a node_modules no .gitignore
 
 - Preparar o arquivo de HTMl principal com as estrutura inicial
 
 - Preparar a estrutura de paginas componentizadas pelo Javascript
+
+## Para executar a aplicação
+
+Backend:
+`npx json-server --watch db.json --port 8000`
+
+Frontend:
+`npx http-server`

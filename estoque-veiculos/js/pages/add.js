@@ -15,7 +15,7 @@ function save() {
     alert('Novo carro adicionado');
 }
 
-function add() {
+export default function add() {
     return `
         <form onsubmit="save()">
             <label for="marca">Marca</label>

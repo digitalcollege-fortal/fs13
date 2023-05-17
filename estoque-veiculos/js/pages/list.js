@@ -1,4 +1,4 @@
-function list() {
+export default function list() {
     fetch('http://localhost:8000/carros')
         .then(res => res.json())
         .then(dados => {
