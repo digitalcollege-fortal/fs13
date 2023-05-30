@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import "bootstrap/dist/css/bootstrap.css";
 import Produto from "./pages/Produto";
 import Produtos from "./pages/Produtos";
+import NotFound from "./pages/NotFound";
 
 
 export default function App() { 
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/perfil" element={<Perfil/>} />
           <Route path="/produto/:id" element={<Produto/>}/>
           <Route path="/produtos" element={<Produtos/>}/>
+          <Route path="/*" element={<NotFound/>} />
         </Routes>
       </div>
     </BrowserRouter>
