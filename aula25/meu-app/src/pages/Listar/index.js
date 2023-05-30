@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Listar() {
-    //let quantidade = 1;
     const [quantidade, setQuantidade] = React.useState(1);
     
 

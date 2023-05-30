@@ -1,0 +1,10 @@
+.card-product {
+    transition: 0.5s;
+}
+
+.card-product:hover {
+    cursor: pointer;
+    background-color: #EFEFEF;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
