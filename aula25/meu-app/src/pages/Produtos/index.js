@@ -1,8 +1,7 @@
-import {useNavigate} from "react-router-dom";
+import CardProduto from "../../components/CardProduto";
 import "./styles.css";
 
 export default function Produtos() {
-    const navigate = useNavigate();
 
     let produtos = [
         {
@@ -26,11 +25,7 @@ export default function Produtos() {
     return (
         <section className="row">
             {produtos.map(cada => (
-                <div className="col">
-                    <div onClick={() => navigate('/produto/'+cada.id)} className="card card-body card-product">
-                        {cada.nome}
-                    </div>
-                </div>
+                <CardProduto id={cada.id} nome={cada.nome}/>
             ))}
         </section>
     )
