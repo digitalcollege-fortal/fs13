@@ -1,0 +1,39 @@
+Aluno {
+    - id
+    - CPF
+    - Nome
+    - Data de Nascimento
+
+}
+
+Professor {
+    - id
+    - CPF
+    - Nome
+    - Data de Nascimento
+    - formacao
+}
+
+Curso {
+    - id
+    - nome
+    - carga horaria
+}
+
+Turma {
+    - id
+    - alunos []
+    - professor_id
+    - monitor_id
+    - laboratorio_id
+    - turno
+    - data
+    - horario
+    - data_inicio
+}
+
+Laboratorios {
+    - id
+    - nome
+    - capacidade
+}
