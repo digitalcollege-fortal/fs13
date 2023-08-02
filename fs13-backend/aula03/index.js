@@ -1,9 +1,11 @@
 const express = require('express');
 const database = require('./conexao');
-
+const curso = require('./src/Curso/routes.js');
 
 const app = express();
 app.use(express.json()); //a API vai trabalhar com JSON
+
+app.use(curso);
 
 app.get('/', (req, res) => {
     res.end('Ola mundo');
