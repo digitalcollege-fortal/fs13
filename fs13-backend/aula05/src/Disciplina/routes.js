@@ -26,6 +26,13 @@ app.get('/disciplinas/:id', async (req, res) => {
 app.post('/disciplinas', async (req, res) => {
     let {nome, carga_horaria} = req.body;
 
+    if (isNaN(carga_horaria)) {
+        res.status(400).send({
+            "error": "carga_horaria invalida"
+        });
+        return;
+    }
+
     let resultado = await database.executar(`
         INSERT INTO ${TABLE} (nome, carga_horaria)
         VALUES ('${nome}', '${carga_horaria}')
