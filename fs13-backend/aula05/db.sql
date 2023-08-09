@@ -101,3 +101,12 @@ VALUES ('Marketing', 100);
 
 
 DELETE FROM tb_curso WHERE id=10;
+
+
+CREATE TABLE tb_disciplina (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    carga_horaria INT NOT NULL
+);
+
+
