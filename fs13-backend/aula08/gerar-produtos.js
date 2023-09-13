@@ -15,6 +15,11 @@ for (let i = 0; i < 10000; i++) {
 sql = sql.slice(0, -1);
 database.executar(sql);
 
+
+
+
+
+
 // TRUNCATE TABLE tb_carrinho;
 // DELETE FROM tb_produto;
 // DELETE FROM tb_categoria;
