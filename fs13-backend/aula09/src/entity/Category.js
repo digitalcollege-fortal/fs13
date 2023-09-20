@@ -11,7 +11,7 @@ const Category = orm.define('tb_category', {
     },
     image: {
         type: DataTypes.STRING
-    },
+    }
 });
 
 // node src/entity/Category.js

@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const orm = require('../connection/orm');
 
-const Customer = orm.define('tb_customer', {
+let CustomerSchema = {
     name: {
         type: DataTypes.STRING(100),
         allowNull: false
@@ -13,10 +13,12 @@ const Customer = orm.define('tb_customer', {
     phone: {
         type: DataTypes.STRING(20)
     }
-});
+};
+
+const Customer = orm.define('tb_customer', CustomerSchema);
 
 orm.sync().then(() => {
     console.log('tabela de clientes atualizada');
 })
 
-module.exports = Customer;
+module.exports = {Customer, CustomerSchema};
