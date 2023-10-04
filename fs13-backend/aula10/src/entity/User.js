@@ -1,23 +1,28 @@
 const { DataTypes } = require('sequelize');
 const orm = require('../connection/orm');
 
-const Category = orm.define('tb_category', {
+const User = orm.define('tb_user', {
     name: {
         type: DataTypes.STRING(30),
         allowNull: false
     },
-    description: {
-        type: DataTypes.STRING
+    email: {
+        type: DataTypes.STRING(100),
+        allowNull: false
     },
-    image: {
-        type: DataTypes.STRING
-    }
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    token: {
+        type: DataTypes.STRING,
+    },
 });
 
-// node src/entity/Category.js
+// node src/entity/User.js
 
 orm.sync().then(() => {
-    console.log('Pronto, tabela de categorias atualizada');
+    console.log('Pronto, tabela de usuarios atualizada');
 });
 
-module.exports = Category;
+module.exports = User;
