@@ -1,4 +1,7 @@
 const User = require("../entity/User");
+const jwt = require('jsonwebtoken');
+
+
 
 async function tokenIsValid(req) {
     // let tokens = [
@@ -6,6 +9,8 @@ async function tokenIsValid(req) {
     //     'niely_gold',
     //     'beatriz_09',
     // ];
+
+    jwt.verify(req.headers.token, 'qwe123');
 
     let user = await User.findAll({
         where: {
@@ -29,6 +34,12 @@ function errorPermission(res) {
 }
 
 async function validSecurity(req, res, next) {
+    //validar se o http client passou o token
+    if (!req.headers.token) {
+        errorPermission(res);
+        return;
+    }
+
     let user = await User.findOne({
         where: {
             token: req.headers.token

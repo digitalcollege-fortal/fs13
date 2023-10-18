@@ -16,6 +16,7 @@ const User = orm.define('tb_user', {
     },
     token: {
         type: DataTypes.STRING,
+        unique: true,
     },
 });
 
