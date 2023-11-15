@@ -4,6 +4,22 @@ const {validSecurity} = require('../security/security');
 
 const router  = express.Router();
 
+//--------------------
+const mongodb = require('mongodb').MongoClient;
+
+const database = async (name) => {
+    //inicia o cliente do mongodb
+    const con = new mongodb('mongodb://0.0.0.0:27017');
+
+    //aqui ele aguarda se conectar
+    await con.connect();
+
+    //retorna o banco de dados selecionado
+    return con.db('db_fs13');
+};
+//-----------------
+
+
 router.get('/categorias', validSecurity, async (req, res) => {
     let data = await Category.findAll(); //SELECT * FROM ... 
     
@@ -16,8 +32,13 @@ router.get('/categorias/:id', validSecurity, async (req, res) => {
     res.send(data);
 });
 
-router.post('/categorias', validSecurity, async (req, res) => {
-    let data = await Category.create(req.body); 
+router.post('/categorias', async (req, res) => {
+    let data = req.body;
+
+    const col = ((await database()).collection('produtos'));
+    
+    await col.insertOne(req.body);
+    //let data = await Category.create(req.body); 
 
     res.send(data);
 });

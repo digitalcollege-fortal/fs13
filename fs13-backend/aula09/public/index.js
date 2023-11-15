@@ -12,7 +12,7 @@ app.get('/', async (req, res) => {
     res.end('API rodando');
 });
 
-app.listen(8000);
+app.listen(8001);
 
 // npm install -g nodemon
 // npx nodemon public\index.js
